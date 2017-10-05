@@ -4,9 +4,9 @@ Our goal is to have a transparent and traceable method for projects that want to
 
 To make this easy for projects and to give you some visibility into the process we have adopted a simple github based approach that follows these steps:
 
- * Clone or create a simple JSON file
- * Add your details
- * Submit a pull request with the project JSON file
+ * Clone and create a simple JSON file for the project
+ * Edit the file with your project details
+ * Submit a pull request with your project JSON file
  * Members will review the project and approve the pull request
  * The map "build" will pick up the new information and you are on the map!
 
@@ -65,3 +65,33 @@ This is a simple JSON strucuture that captures the information that will be used
    }
 }
 ```
+
+## Making a submission
+
+**If you are a github whiz then all you need to do is:**
+
+* Create a file using the JSON above or the digitallifecollective.json file as your template
+* Name it logically [projectName].json
+* Create a pull request and commit your file
+* Bob's you uncle!
+
+**If  you need a little more detail follow these steps:**
+
+1. Download this file [digitallifecollective.json ](https://github.com/ppbpdx/digi/blob/master/digitallifecollective.json)
+
+
+2. Open it in a text editor (not a word processor they tend to gum up the formatting)
+
+
+3. Edit the contents of the file by replacing the template content with your own. Hint: the quotes and commas matter so be aware of what you edit.
+
+
+4. If you need help with the formatting you can always use a handy online format checker like [this one](https://jsonformatter.curiousconcept.com/). Your file will be reviewed and formatted as part of the pull request review.
+
+
+5. Now login to your [github.com](https://github.com) account and navigate to https://github.com/DigitalLifeCollective/projects/submissions
+
+
+
+
+
