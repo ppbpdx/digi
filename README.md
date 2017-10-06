@@ -60,41 +60,91 @@ In the review process we will do the following:
 ## JSON Structure
 This is a simple JSON strucuture that captures the information that will be used to generate the project map and other tools we create to curate the projects aligned with the Digital Life Collective.
 
+**Instructions for creating your file. Let's break down the fields:**
+
+The 'project' field is the label that will show up on the map. Try to keep this short so it displays well.
+
+The 'website' field is the link that will be on the map to the project. Please use the full URL.
+
+The 'description' field is shown in the side bar on the map and can include markdown embedded content such as images or video links. This can be a couple of paragraphs but should be concise.
+
+The 'logoURL' needs to be a direct link to the image with no click through or it will not display on the map. A 400 x 400 px size works well.
+
 
 ```
 {
    "project":"Digital Life Collective",
    "website":"https://diglife.com",
-   "description":"The Digital Life Collective develops, funds and supports technologies created with only the individual's needs in mind.",
-  "tags":[
-      "collective",
-      "co-op"
-   ],
-  "type":[
-      "social media",
-      "publishing"
-   ],
+   "description":"The Digital Life Collective develops, funds and supports technologies created with only the  individual's needs in mind.",
+   "logoURL":"https://diglife.com/images/logo.png",
+   "twitter":"@digitallifecollective",
+   "email":"info@diglife.com",
+   
+```
+The Digital Life Collective exists to nurture Tech We Trust. Projects should be aligned with one or more of the following purposes and should have no conflicting goals or technology:
+* trust
+* equality
+* privacy
+* decentralization
+
+Please limit the values here to one or more from this list.
+
+```
    "purpose":[
       "privacy",
       "trust"
    ],
+```
+
+TODO: @sheldrake we need some values and definitions. We were not sure what the "stack" field in the spreadsheet meant. Should this be aligned with the decentalized stack image? We should put it in the readme or a link to it.
+
+The 'type' field refers to the function that that your project fullfills in the larger eccosystem. The options for this filed should be:
+* social
+* legal
+* concensus
+* semantics
+
+Please limit the values here to one or more from this list.
+   
+
+```
+  "type":[
+      "social media",
+      "publishing"
+   ],
+```   
+
+
+Please list any formal affiliations your project has with organizations.
+   
+
+```
+  "affliation":[
+      "MIT",
+      "Linux Foundation"
+   ],
+```   
+
+Please specify the license types that apply to your project. If there is more than one you can have mulitple values.
+
+TODO: @sheldrake should this be a specific list or can people put any license type.
+
+```
    "license":[
       "MIT",
       "Apache 2"
    ],
+ ```  
+ Please provide links to the repositories and the details about the code that is in them.
+```  
+
    "repoURL":"https://github.com/orgs/DigitalLifeCollective",
-   "logoURL":"https://diglife.com/images/logo.png",
-   "twitter":"@digitallifecollective",
-   "email":"info@diglife.com",
    "techDetails":{
       "languages":[
          "python",
          "java"
       ],
-      "platforms":[
-         "mattermost",
-         "ghost"
-      ],
+ 
       "documentationLanguages":[
          "english",
          "german"
@@ -103,3 +153,19 @@ This is a simple JSON strucuture that captures the information that will be used
 }
 ```
 
+What other elements or projects does your project require or depend on? For example, Ethereum, GNU Social, or Bitcoin.
+```
+     "requires":[
+         "Ethereum",
+         "GNU Social"
+      ],
+```
+
+
+Have we missed any critical information? You can include up to 5 'tags' that describe your project. 
+
+```
+  "tags":[
+      "collective",
+      "co-op"
+   ],
