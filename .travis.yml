@@ -8,7 +8,7 @@ script:
   - python pybuild.py 
 deploy:
   provider: releases
-  api_key: "GITHUB OAUTH TOKEN"
+  api_key: "GITHUB_TOKEN"
   file: "map.json"
   skip_cleanup: true
   on:
