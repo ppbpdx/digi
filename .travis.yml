@@ -6,8 +6,8 @@ script:
 env:
   global:
   - secure: z3Nc+tPhLun+9vjmvCo+KCwiQIICY5BiLH/TwZEwij4QDmO4sYab35/4OYrSVo+pqpUMbSzdxZCXh9PcYNSF0t0/0gu2zFZrbC8Z6d34sSObQ6IbJIerjhniTaX1ywrKWCfMrqfhrO4JlQ5T45u98cz3Xa/Lc5PPs3OUg4PTQm+YzR7TXyUz/cCPidZfZ1JvDXGyFz9J0crJamxECfSLVsIvxqSzvK+x/5cnVpjF6B/sCB82mpZR7gCOvS2ztRuhK5FVuOJCelde3WGRlNjJilKlDgWMO4MhYGzLdWCKHgtUaTpnIUaTNyT5FW67FXvEvX3GyVwgYQ5rS3b5xLp85Px23SgZLL3qfWZZ0O7DZ1SI407zYdBhyh6F4WFKNjVCVk84aqDfzvCMNm+PJXipHQlxehhm1uCVMHzXgN+yXkLMnWXCd2UrjOLTLf/yyzcHkJZPJ9NDZVgt2OvuFYcbvn/c7eZKtN9+Z+f0JgMZF0TNjnQ0rfBMMxVSJ2eFFRskgsTtHNFZdvZQixJ0tHtU1FPYlmx/mwGbA8bxRH7+M0Ingc7CifxDSpnGfDaTlBj/k+wXhtBhV8I7nbWbsMyJ3fWpnYMGFtyj3Gk/aoTUtilEVTqFwK222ABS2BSPeukg0SlyOzc7j3me61Kx7y2xY/axd7c6AFHuqZe/GM/UAiU=
-  
- after_success:
-  - git add map.json
+  - FILES="map.json"
+after_success:
+  - git add ${FILES}
   - git commit -m "travis made this"
   - git push 
