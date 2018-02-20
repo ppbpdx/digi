@@ -5,7 +5,7 @@ python:
 
 # command to run tests
 script:
-  - pybuild 
+  - pybuild.py 
 deploy:
   provider: releases
   api_key: "GITHUB OAUTH TOKEN"
