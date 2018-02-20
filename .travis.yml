@@ -10,4 +10,4 @@ env:
 after_success:
 - git add ${FILES}
 - git commit -m "travis made this"
-- git push 
+- git push origin HEAD:master
