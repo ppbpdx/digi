@@ -1,3 +1,6 @@
+import os
+import json
+
 path = 'json_files'
 project_list = []
 output_dict= {}
