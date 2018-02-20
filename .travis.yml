@@ -10,5 +10,4 @@ deploy:
   file: map.json
   on:
     repo: ppbpdx/digi
-    tags: false
     all_branches: true
