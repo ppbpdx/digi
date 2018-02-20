@@ -7,7 +7,7 @@ python:
 script:
   - python pybuild.py 
 deploy:
-  provider: submissions
+  provider: digimap
   api_key: "GITHUB OAUTH TOKEN"
   file: "map.json"
   skip_cleanup: true
