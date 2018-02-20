@@ -1,7 +1,7 @@
 import os
 import json
 
-path = 'json_files'
+path = 'projects'
 project_list = []
 output_dict= {}
 
